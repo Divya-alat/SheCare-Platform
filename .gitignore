@@ -1,0 +1,58 @@
+# # Dependencies
+# node_modules/
+# **/node_modules/
+
+# # Environment files — NEVER commit these
+# .env
+# .env.local
+# .env.production
+# **/.env
+# **/.env.local
+# **/.env.production
+
+# # Next.js
+# .next/
+# out/
+
+# # Python
+# __pycache__/
+# *.py[cod]
+# *.pyo
+# *.pyd
+# .Python
+# ml-models/venv/
+# *.pkl
+# *.egg-info/
+# dist/
+# build/
+
+# # Logs
+# *.log
+# npm-debug.log*
+
+# # OS
+# .DS_Store
+# Thumbs.db
+
+# # VS Code
+# .vscode/settings.json
+
+# # MongoDB local data
+# data/db/
+
+
+
+node_modules/
+**/node_modules/
+.env
+**/.env
+.env.local
+**/.env.local
+.next/
+__pycache__/
+**/__pycache__/
+*.pyc
+ml-models/venv/
+*.log
+.DS_Store
+Thumbs.db
