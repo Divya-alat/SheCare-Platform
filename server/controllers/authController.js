@@ -16,7 +16,7 @@ const sendOTPEmail = async (email, otp) => {
   });
 
   await transporter.sendMail({
-    from: `"SheCare 🌸" <${process.env.EMAIL_USER}>`,
+    from: `"SheCare 🌸" <${process.env.EMAIL_USER}>`,,
     to: email,
     subject: 'Your SheCare Verification Code',
     html: `
