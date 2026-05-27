@@ -54,16 +54,10 @@
 ---
 
 ## 📸 Screenshots
-
-> *Add screenshots of your app here*
-> 
-> Tip: Press `Win + Shift + S` to take screenshots and add them to `/public/screenshots/`
-
-```markdown
 ![Home Page](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/home.png)
 ![Period Tracker](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/tracker.png)
 ![PCOS Detection](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/pcos.png)
-```
+
 
 ---
 
