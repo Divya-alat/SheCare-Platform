@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SHEcare-Women's%20Health%20Platform-purple?style=for-the-badge" />
 
-# 💜 SHEcare — Women's Health & Safety Platform
+# 💜 SheCare — Women's Health & Safety Platform
 
 *An all-in-one AI-powered platform built for every woman's health, safety & wellbeing*
 
