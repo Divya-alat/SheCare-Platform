@@ -181,3 +181,61 @@ exports.changePassword = async (req, res, next) => {
     res.json({ success: true, message: 'Password updated successfully' });
   } catch (err) { next(err); }
 };
+
+// Add this to server/controllers/authController.js
+// New endpoint: POST /api/auth/google
+
+const jwt  = require('jsonwebtoken');
+const User = require('../models/User');
+
+const generateToken = (id) =>
+  jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRE || '7d' });
+
+exports.googleAuth = async (req, res, next) => {
+  try {
+    const { name, email, googleId, avatar } = req.body;
+
+    if (!email) {
+      return res.status(400).json({ success: false, message: 'Email required' });
+    }
+
+    // Check if user exists
+    let user = await User.findOne({ email });
+    let needsRole = false;
+
+    if (!user) {
+      // New user — create with Google
+      user = await User.create({
+        name,
+        email,
+        googleId,
+        avatar,
+        isVerified: true,      // Google already verified
+        password:   googleId + process.env.JWT_SECRET, // dummy password
+        role:       'student', // default role
+      });
+      needsRole = true; // Ask them to select role
+    } else {
+      // Existing user — update Google info
+      user.googleId  = googleId;
+      user.avatar    = avatar || user.avatar;
+      user.isVerified= true;
+      await user.save();
+    }
+
+    const token = generateToken(user._id);
+
+    res.json({
+      success: true,
+      token,
+      needsRole,
+      user: {
+        _id:    user._id,
+        name:   user.name,
+        email:  user.email,
+        role:   user.role,
+        avatar: user.avatar,
+      },
+    });
+  } catch (err) { next(err); }
+};

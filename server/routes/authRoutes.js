@@ -4,7 +4,8 @@ const {
   register, verifyOTP, resendOTP, login, getMe, updateProfile, changePassword,
 } = require('../controllers/authController');
 const { protect } = require('../middleware/authMiddleware');
-
+const { googleAuth } = require('../controllers/authController');
+router.post('/google', googleAuth);
 // Public
 router.post('/register',    register);
 router.post('/verify-otp',  verifyOTP);
