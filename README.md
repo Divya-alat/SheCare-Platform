@@ -16,7 +16,7 @@
 
 ## 🌟 About SHEcare
 
-**SHEcare** is a comprehensive women's health and safety platform that combines AI, real-time tracking, and smart features to empower women at every stage of life. From tracking menstrual cycles to detecting PCOS risk, providing pregnancy guidance, and offering an emergency SOS system — SHEcare is a one-stop solution for every woman's needs.
+**SheCare** is a comprehensive women's health and safety platform that combines AI, real-time tracking, and smart features to empower women at every stage of life. From tracking menstrual cycles to detecting PCOS risk, providing pregnancy guidance, and offering an emergency SOS system — SHEcare is a one-stop solution for every woman's needs.
 
 > 💡 *Built with empathy, powered by technology.*
 
@@ -60,9 +60,9 @@
 > Tip: Press `Win + Shift + S` to take screenshots and add them to `/public/screenshots/`
 
 ```markdown
-![Home Page](public/screenshots/home.png)
-![Period Tracker](public/screenshots/tracker.png)
-![PCOS Detection](public/screenshots/pcos.png)
+![Home Page](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/home.png)
+![Period Tracker](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/tracker.png)
+![PCOS Detection](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/pcos.png)
 ```
 
 ---
