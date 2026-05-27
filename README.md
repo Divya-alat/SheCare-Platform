@@ -54,10 +54,10 @@
 ---
 
 ## 📸 Screenshots
-![Home Page](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/home.png)
-![Period Tracker](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/tracker.png)
-![PCOS Detection](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/public/screenshots/pcos.png)
-
+![Home Page](https://raw.githubusercontent.com/Divya-alat/SheCare-Platform/main/homepage.png)
+![Chatbot](https://raw.githubusercontent.com/Divya-alat/SheCare-Platform/main/chatbot.png)
+![Period Tracker](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/tracker.png)
+![PCOS Detection](https://raw.githubusercontent.com/Divya-alat/shecare-platform/main/pcos.png)
 
 ---
 
