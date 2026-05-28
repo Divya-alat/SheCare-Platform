@@ -1,20 +1,27 @@
 const express = require('express');
 const router  = express.Router();
 const {
-  register, verifyOTP, resendOTP, login, getMe, updateProfile, changePassword,
+  register,
+  verifyOTP,
+  resendOTP,
+  login,
+  getMe,
+  updateProfile,
+  changePassword,
+  googleAuth,
 } = require('../controllers/authController');
 const { protect } = require('../middleware/authMiddleware');
-const { googleAuth } = require('../controllers/authController');
-router.post('/google', googleAuth);
-// Public
-router.post('/register',    register);
-router.post('/verify-otp',  verifyOTP);
-router.post('/resend-otp',  resendOTP);
-router.post('/login',       login);
 
-// Protected
-router.get ('/me',              protect, getMe);
-router.put ('/profile',         protect, updateProfile);
-router.put ('/change-password', protect, changePassword);
+// Public routes
+router.post('/register',         register);
+router.post('/verify-otp',       verifyOTP);
+router.post('/resend-otp',       resendOTP);
+router.post('/login',            login);
+router.post('/google',           googleAuth);
+
+// Protected routes
+router.get ('/me',               protect, getMe);
+router.put ('/profile',          protect, updateProfile);
+router.put ('/change-password',  protect, changePassword);
 
 module.exports = router;
