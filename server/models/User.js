@@ -20,6 +20,7 @@ const UserSchema = new mongoose.Schema({
   },
   age:    { type: Number },
   avatar: { type: String, default: '' },
+  googleId: { type: String },
 
   // OTP for email verification
   otp:          { type: String, select: false },

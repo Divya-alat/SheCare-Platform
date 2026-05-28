@@ -1,0 +1,25 @@
+PORT=5000
+MONGO_URI=mongodb+srv://shecare_user:Shecare%401711@shecare.h8sxs8k.mongodb.net/shecare?retryWrites=true&w=majority
+JWT_EXPIRE=7d
+JWT_SECRET=shecare_secret_key_divya_1711
+CLIENT_URL=https://your-shecare-app.vercel.app
+EMAIL_HOST=smtp-relay.brevo.com
+EMAIL_PORT=587
+EMAIL_USER=ac8b26001@smtp-brevo.com
+EMAIL_PASS=xsmtpsib-24b290de3349d10c185161e75723de5739544e6d1b790d200f9eb36e1605d6f2-w3Dqg1aWBbefsCdh
+NODE_ENV=production
+GOOGLE_CLIENT_ID=279968205562-0pkfjt0mla5v2rcva12seohl61onui5v.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+
+
+client id - 279968205562-0pkfjt0mla5v2rcva12seohl61onui5v.apps.googleusercontent.com
+
+client secret - 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
+
+
+GEMINI API KEY - AIzaSyCmXNWGjG2ex4PoxFUuTjI-14ft12fqqwU
+
+
+id - 222233484052-dtvvtstsjm21h4g0l6b27bcskbr3mqpl.apps.googleusercontent.com
+
+secret- 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
